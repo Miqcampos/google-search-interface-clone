@@ -1,0 +1,342 @@
+:root {
+    --grey1: #171717;
+    --grey2: #1f1f1f;
+    --grey3: #2a2a2a;
+    --grey4: #64676b;
+    --grey5: #dedede;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Google Sans, Arial, sans-serif;;
+    /* background-color: var(--grey2); */
+}
+
+body {
+    background-color: var(--grey2);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* HEADER */
+
+header {
+    width: auto;
+    height: 51px;
+    background-color: var(--grey2);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#menuHeader {
+    width: auto;
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#linksHeader a {
+    margin-right: 12px;
+    color: var(--white);
+    font-size: 13px;
+}
+
+#googleApps {
+    width: 40px;
+    height: 40px;
+    margin-left: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gridApps {
+    color: var(--grey4);
+}
+
+#googleApps:hover {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: var(--grey3);
+    transition: 0.5s;
+}
+
+#acount {
+    width: 40px;
+    height: 40px;
+    margin: 0px 10px 0px 9px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+#acount img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+#acount:hover {
+    background-color: var(--grey3);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* FIM HEADER */
+
+/* MAIN */
+
+main {
+    background-color: var(--grey2);
+}
+
+#main1 {
+    width: 100%;
+    min-height: 92px;
+    max-height: 290px;
+    margin: 50px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+/* AREA CENTRAL DE PESQUISA */
+
+#main2 {
+    width: auto;
+    /* height: 146px; */
+    padding: 20px;
+}
+
+#subMain2 {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+#center {
+    margin: 0 auto;
+    max-width: 688px;
+    padding-top: 6px;
+    position: relative;
+}
+
+#searchArea {
+    display: flex;
+    z-index: 3;
+    position: relative;
+    min-height: 50px;
+    background: #4d5156;
+    border: 1px solid transparent;
+    box-shadow: none;
+    border-radius: 200px;
+    margin: 0 auto;
+}
+
+
+#intoSearch {
+    flex: 1;
+    display: flex;
+    background: inherit;
+    border-radius: inherit;
+    padding: 0 8px 0 0;
+}
+
+#intoSearch:hover {
+    background-color: #5b5d5f;
+    cursor: text;
+}
+
+#uploads {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: 7px;
+}
+
+#spanUploads, #svgUploads {
+    width: 24px;
+    height: 24px;
+}
+
+#uploads button {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background-color: transparent;
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#uploads button:hover {
+    background-color: var(--grey3);
+}
+
+#textArea {
+    line-height: 18px;
+    padding-top: 15px;
+    border-bottom: 8px solid transparent;
+    resize: none;
+    background-color: transparent;
+    border: none;
+    color: #e8eaed;
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    font-size: 16px;
+    flex: 100%;
+}
+
+#textArea textarea {
+    text-align: start center;
+    overflow-x: hidden;
+}
+
+#optionsSearch {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: stretch;
+    flex-direction: row;
+    height: 50px;
+    background: inherit;
+    border-radius: inherit;
+}
+
+#buttonsSearchAreaPt1 {
+    width: 120px;
+    height: 24;
+    display: flex;
+    align-items: center;
+    background-color: inherit;
+}
+
+#textInsertion, #voiceSearch, #imageSearch {
+    margin: 0px 7px 0px 7px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#buttonsSearchAreaPt2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttonIa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 8px 5px 8px;
+    border-radius: 100px;
+    background-color: inherit;
+    color: var(--grey5);
+    border-style: none;
+    border: 1px solid var(--grey5);
+    cursor: pointer;
+}
+
+/* FIM AREA CENTRAL DE PESQUISA */
+
+#buttonsCenter {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: row;
+    height: 50px;
+    background: inherit;
+    border-radius: inherit;
+    background-color: var(--grey2);
+    padding-top: 20px;
+}
+
+.bCenter {
+    height: 36px;
+    background-color: var(--grey3);
+    border-style: none;
+    border-radius: 8px;
+    color: var(--white);
+    margin: 0px 6px 0px 6px;
+    padding: 0px 17px 0px 17px;
+    cursor: pointer;
+}
+
+.bCenter:hover {
+    border: 1px solid var(--grey4);
+}
+
+#main3 {
+    width: 100%;
+    height: 209px;
+}
+
+/* FIM MAIN */
+
+/* FOOTER */
+
+footer {
+    background-color: var(--grey1);
+}
+
+#footer1, #footer2 {
+    width: 100%;
+    background-color: var(--grey1);
+    position: fixed;
+}
+
+#footer1 {
+    bottom: 47px;
+    border-bottom: 1px solid var(--grey3) ;
+    padding: 15px 30px;
+    color: var(--grey5);
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#footer2 {
+    height: 46px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#linksFooter1 a, #linksFooter2 a{
+    height: 99%;
+    padding: 15px;
+    font-size: 14px;
+    color: var(--grey5);
+    background-color: var(--grey1);
+    margin: 0;
+}
+
+#linksFooter1 {
+    margin-left: 20px;
+}
+
+#linksFooter2 {
+    margin-right: 20px;
+}
+
+/* FIM FOOTER */
